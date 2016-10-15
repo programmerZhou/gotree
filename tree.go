@@ -120,8 +120,6 @@ func main() {
 		matched := false
 		for _, pattern := range ignorePatterns {
 			m, err := filepath.Match(path, pattern)
-			fmt.Printf("path is %s, pattern is %s, m is %v\n", 
-			path, pattern, m)
 			if err != nil {
 				fmt.Printf("filepath.Match returned %v\n", err)
 			} else {
